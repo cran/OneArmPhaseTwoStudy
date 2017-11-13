@@ -37,21 +37,20 @@ Rejecting the null hypothesis more than "r" responses in the subset endpoint
 or more than "s" responses in the superset endpoint among "n" patients are needed.
 }
 \examples{
-\dontrun{
 # Example 1: Using the default values
 sub1 <- setupSub1Design()
 getSolutionsSub1(sub1)
-
+\donttest{
 # Example 2: Setting up a "sub1"-object, then calculating designs
 sub1 <- setupSub1Design(alpha = 0.1, beta = 0.2, pc0 = 0.3, pt0 = 0.4)
 designs <- getSolutionsSub1(sub1)$Solutions
-designs 
+designs
 
 # Example 2: Calculating designs and simulating the influence of stochastic curtailment
 # for each design.
 sub1 <- setupSub1Design(alpha = 0.1, beta = 0.2, pc0 = 0.3, pt0 = 0.4)
 designs <- getSolutionsSub1(sub1, useCurtailment = TRUE, curtailAll = TRUE, cut = 0.3)
-#Contains the found designs, the influence of stochastic curtailment 
+#Contains the found designs, the influence of stochastic curtailment
 #and the regarding stopping rules .
 designs
 }
@@ -62,4 +61,3 @@ Kunz C.U., Kieser M (2012): Curtailment in single-arm two-stage phase II oncolog
 \seealso{
 \code{\link{setupSub1Design}}
 }
-

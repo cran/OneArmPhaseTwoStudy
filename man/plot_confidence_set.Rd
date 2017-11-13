@@ -27,7 +27,6 @@ plot_confidence_set(t, u, r1, n1, n, pc0, pt0, alpha)
 Plots the "confidence set" which can be received by invoking "get_confidence_set". Also the "uniformly minimal variance unbiased estimator" and the acceptance area are included in the plot.
 }
 \examples{
-\dontrun{
 #Setup "sub1"-object
 sub1 <- setupSub1Design(pc0 = 0.5, pt0 = 0.6)
 
@@ -40,11 +39,9 @@ u = 12
 
 plot_confidence_set(t, u, design$r1, design$n1, design$n, design$pc0, design$pt0, 0.1)
 }
-}
 \references{
 Kunz, C. U.  (2011), Two-stage designs for phase II trials with one or two endpoints. http://d-nb.info/1024218457
 }
 \seealso{
 \code{\link{get_confidence_set}}, \code{\link{get_UMVUE_GMS_subset_second_total}}, \code{\link{get_UMVUE_GMS}}
 }
-

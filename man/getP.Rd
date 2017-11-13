@@ -19,4 +19,3 @@ Helper-function for the function \code{\link{getCP}}
 \seealso{
 \code{\link{getCP}}
 }
-

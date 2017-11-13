@@ -7,7 +7,7 @@
 getD_equally(design, alpha)
 }
 \arguments{
-\item{design}{a dataframe containing all critical values for a Simon's two-stage design defined by the colums r1, n1, r, n and p0. 
+\item{design}{a dataframe containing all critical values for a Simon's two-stage design defined by the colums r1, n1, r, n and p0.
 \itemize{
    \item r1 = critical value for the first stage (more than r1 responses needed to proceed to the second stage).
    \item n1 = number of patients enrolled in the first stage.
@@ -19,17 +19,15 @@ getD_equally(design, alpha)
 \item{alpha}{overall significance level the trial was planned for.}
 }
 \description{
-Calculates the conditional error for all possible outcomes at the interim analysis (different number of responses) 
+Calculates the conditional error for all possible outcomes at the interim analysis (different number of responses)
 spending the "rest alpha" (difference between nominal alpha level and actual alpha level) equally.
 }
 \examples{
-\dontrun{
 #Calculate a Simon's two-stage design
 design <- getSolutions()$Solutions[3,] #minimax-design for the default values.
 
 ce_equally <- getD_equally(design, 0.05)
 ce_equally
-}
 }
 \references{
 Englert S., Kieser M. (2012): Adaptive designs for single-arm phase II trials in oncology. Pharmaceutical Statistics 11,241-249.
@@ -37,4 +35,3 @@ Englert S., Kieser M. (2012): Adaptive designs for single-arm phase II trials in
 \seealso{
 \code{\link{getD_proportionally}}, \code{\link{getD_distributeToOne}}, \code{\link{getD_none}}
 }
-

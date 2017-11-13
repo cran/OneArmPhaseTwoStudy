@@ -21,7 +21,6 @@ get_UMVUE_GMS_subset_second_total(t, u, r1, n1, n)
 Calculates the "uniformly minimal variance unbiased estimator" (UMVUE) for the true response rate for the superset endpoint.
 }
 \examples{
-\dontrun{
 #Setup "sub1"-object
 sub1 <- setupSub1Design(pc0 = 0.5, pt0 = 0.6)
 
@@ -33,5 +32,3 @@ t = 9
 u = 13
 umvue_second <- get_UMVUE_GMS_subset_second_total(t, u, design$r1, design$n1, design$n)
 }
-}
-

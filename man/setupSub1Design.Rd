@@ -24,12 +24,9 @@ setupSub1Design(alpha = 0.1, beta = 0.1, pc0 = 0.6, pt0 = 0.7,
 Creates a "sub1"-object which can be used in the function \code{getSolutionsSub1} to identify possible designs.
 }
 \examples{
-\dontrun{
 #Create "sub1"-object.
 sub1 <- setupSub1Design()
 #Calculate designs for the given "sub1"-object.
 designs <- getSolutionsSub1(sub1)$Solutions
 designs
 }
-}
-

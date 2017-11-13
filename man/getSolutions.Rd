@@ -24,24 +24,23 @@ getSolutions(simon = setupSimon(), useCurtailment = FALSE,
 getSolutions uses a "simon"-object to calculate two-stage designs as they were described by Simon.
 }
 \examples{
-\dontrun{
 # Example 1: Using the default values
 designs <- getSolutions()
 designs <- designs$Solutions
 designs
-
+\donttest{
 # Example 2: Setting up a "simon"-object, then calculate designs
 simon <- setupSimon(alpha = 0.1, beta = 0.2, p0 = 0.3, p1 = 0.5)
 designs <- getSolutions(simon)$Solutions
-designs 
+designs
 
-# Esample 3: Calculating designs and simulating the influence of 
+# Esample 3: Calculating designs and simulating the influence of
 # stochastic curtailment for each design.
 simon <- setupSimon(alpha = 0.1, beta = 0.2, p0 = 0.3, p1 = 0.5)
 designs <- getSolutions(simon, useCurtailment = TRUE, curtail_All = TRUE, cut = 0.3)
-#List containing the found designs, the influence of stochastic curtailment 
+#List containing the found designs, the influence of stochastic curtailment
 # and the regarding stopping rules.
-designs 
+designs
 }
 }
 \references{
@@ -52,4 +51,3 @@ Kunz C.U., Kieser M (2012): Curtailment in single-arm two-stage phase II oncolog
 \seealso{
 \code{\link{setupSimon}}
 }
-

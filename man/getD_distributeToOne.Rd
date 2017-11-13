@@ -19,17 +19,15 @@ getD_distributeToOne(design, alpha)
 \item{alpha}{overall significance level the trial was planned for.}
 }
 \description{
-Calculates the conditional error for all possible outcomes at the interim analysis (different number of responses) 
+Calculates the conditional error for all possible outcomes at the interim analysis (different number of responses)
 spending the "rest alpha" (difference between nominal alpha level and actual alpha level) only to increase the worst case (smallest conditional error value that is not equal to 0).
 }
 \examples{
-\dontrun{
 #Calculate a Simon's two-stage design
 design <- getSolutions()$Solutions[3,] #minimax-design for the default values.
 
 ce_toOne <- getD_distributeToOne(design, 0.05)
 ce_toOne
-}
 }
 \references{
 Englert S., Kieser M. (2012): Adaptive designs for single-arm phase II trials in oncology. Pharmaceutical Statistics 11,241-249.
@@ -37,4 +35,3 @@ Englert S., Kieser M. (2012): Adaptive designs for single-arm phase II trials in
 \seealso{
 \code{\link{getD_proportionally}}, \code{\link{getD_equally}}, \code{\link{getD_none}}
 }
-

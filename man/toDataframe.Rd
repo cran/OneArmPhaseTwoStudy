@@ -12,9 +12,8 @@ toDataframe(designObject, useCurtailment = F)
 \item{useCurtailment}{boolean value dedicating the use of (non-)stochastic curtailment. This parameter indicates if that information should also gathered.}
 }
 \description{
-Transfers the found designs of a "design"-object to a dataframe. This function is a helper-function used in 
+Transfers the found designs of a "design"-object to a dataframe. This function is a helper-function used in
 \code{\link{getSolutions}} and \code{\link{getSolutionsSub1}} to structure the found designs for a given parameter set specified
 in a "sub1"-object or "simon"-object.
 The return value is a list containing a dataframe for the found designs and multiple dataframes containing the results for (non-)stochastic curtailment, if present.
 }
-

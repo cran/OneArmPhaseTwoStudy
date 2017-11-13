@@ -26,7 +26,6 @@ setSub1Params(sub1, alpha = 0.1, beta = 0.1, pc0 = 0.6, pt0 = 0.7,
 Sets the parameters for a given "sub1"-object.
 }
 \examples{
-\dontrun{
 #Create "sub1"-object.
 sub1 <- setupSub1Design()
 #Change parameters.
@@ -35,8 +34,6 @@ setSub1Params(sub1, beta = 0.2, pc0 = 0.5, pt0 = 0.6)
 designs <- getSolutionsSub1(sub1)$Solutions
 designs
 }
-}
 \seealso{
 \code{\link{setupSub1Design}}
 }
-

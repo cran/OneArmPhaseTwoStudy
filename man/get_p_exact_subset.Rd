@@ -27,7 +27,6 @@ get_p_exact_subset(t, u, r1, n1, n, pc0, pt0, sub1 = setupSub1Design())
 Calculates the exact p value for a given subset design.
 }
 \examples{
-\dontrun{
 #Setup "sub1"-object
 sub1 <- setupSub1Design(pc0 = 0.5, pt0 = 0.6)
 
@@ -42,8 +41,6 @@ u = 13
 p_val <- get_p_exact_subset(t, u, design$r1, design$n1, design$n, design$pc0, design$pt0, sub1)
 p_val
 }
-}
 \seealso{
 \code{\link{setupSub1Design}}
 }
-

@@ -24,12 +24,11 @@ get_confidence_set(t, u, r1, n1, n, pc0, pt0, alpha)
 \item{alpha}{significance level the study was planned for.}
 }
 \description{
-The p-value of  Subset Designs depends on two endpoints e.g. the superset endpoint and the subset endpoint. 
+The p-value of  Subset Designs depends on two endpoints e.g. the superset endpoint and the subset endpoint.
 Therefore the confidence interval for the response rate of the subset endpoint depends on the response rate of the superset endpoint and vice versa.
 This results in a conficence "area" which is called the confidence set. "get_conficence_set" returns a set of points which outline the border of the confidence set.
 }
 \examples{
-\dontrun{
 #Setup "sub1"-object
 sub1 <- setupSub1Design(pc0 = 0.5, pt0 = 0.6)
 
@@ -42,11 +41,9 @@ alpha = 0.1
 
 conf_set <- get_confidence_set(t, u, design$r1, design$n1, design$n, design$pc0, design$pt0, alpha)
 }
-}
 \references{
 Kunz, C. U.  (2011), Two-stage designs for phase II trials with one or two endpoints. http://d-nb.info/1024218457
 }
 \seealso{
 \code{\link{setupSub1Design}}, \code{\link{plot_confidence_set}}
 }
-

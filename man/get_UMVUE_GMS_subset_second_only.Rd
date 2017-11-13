@@ -18,11 +18,10 @@ get_UMVUE_GMS_subset_second_only(t, u, r1, n1, n)
 \item{n}{overall sample size.}
 }
 \description{
-Calculates the "uniformly minimal variance unbiased estimator" (UMVUE) for the true response rate only for the superset endpoint 
+Calculates the "uniformly minimal variance unbiased estimator" (UMVUE) for the true response rate only for the superset endpoint
 (response rate superset endpoint minus response rate subset endpoint) in a subset design.
 }
 \examples{
-\dontrun{
 #Setup "sub1"-object
 sub1 <- setupSub1Design(pc0 = 0.5, pt0 = 0.6)
 
@@ -34,5 +33,3 @@ t = 9
 u = 13
 umvue_second <- get_UMVUE_GMS_subset_second_only(t, u, design$r1, design$n1, design$n)
 }
-}
-

@@ -34,7 +34,6 @@ get_conditionalPower(t, u, enrolled, r1, n1, r, s, n, pc1, pt1,
 Calculates the conditional power of a given subset design.
 }
 \examples{
-\dontrun{
 #Setup "sub1"-object
 sub1 <- setupSub1Design(pc0 = 0.5, pt0 = 0.6)
 
@@ -45,11 +44,9 @@ t <- 5
 u <- 7
 enrolled <- 10
 
-con_p <- get_conditionalPower(t, u, enrolled, design$r1, 
+con_p <- get_conditionalPower(t, u, enrolled, design$r1,
 design$n1, design$r, design$s, design$n, design$pc1, design$pt1, sub1)
-}
 }
 \seealso{
 \code{\link{setupSub1Design}}
 }
-
